@@ -1,5 +1,8 @@
 class StudentsController < ApplicationController
   def index
-    #stuff will happen here
+    @students = Student.all
+  end
+
+  def show
   end
 end
