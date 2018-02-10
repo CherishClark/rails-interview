@@ -555,3 +555,571 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for ::1 at 2018-02-10 09:58:13 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty "], ["lastname", "Smith Dimension C-0"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:16:09.782478"], ["updated_at", "2018-02-10 17:16:09.782478"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty "], ["lastname", "Smith Dimension C-42"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:16:09.787718"], ["updated_at", "2018-02-10 17:16:09.787718"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty "], ["lastname", "Smith Dimension C-84"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:16:09.789678"], ["updated_at", "2018-02-10 17:16:09.789678"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty "], ["lastname", "Smith Dimension C-126"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:16:09.792274"], ["updated_at", "2018-02-10 17:16:09.792274"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty "], ["lastname", "Smith Dimension C-168"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:16:09.794831"], ["updated_at", "2018-02-10 17:16:09.794831"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty "], ["lastname", "Smith Dimension C-210"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:16:09.797147"], ["updated_at", "2018-02-10 17:16:09.797147"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty "], ["lastname", "Smith Dimension C-252"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:16:09.798936"], ["updated_at", "2018-02-10 17:16:09.798936"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty "], ["lastname", "Smith Dimension C-294"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:16:09.801023"], ["updated_at", "2018-02-10 17:16:09.801023"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty "], ["lastname", "Smith Dimension C-336"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:16:09.802832"], ["updated_at", "2018-02-10 17:16:09.802832"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty "], ["lastname", "Smith Dimension C-378"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:16:09.804764"], ["updated_at", "2018-02-10 17:16:09.804764"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students"  ORDER BY "students"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.4ms)[0m  SELECT  "students".* FROM "students"  ORDER BY "students"."id" DESC LIMIT 1
+  [1m[36mStudent Load (1.2ms)[0m  [1mSELECT  "students".* FROM "students"  ORDER BY "students"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.4ms)[0m  SELECT  "students".* FROM "students"  ORDER BY "students"."id" ASC LIMIT 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty "], ["lastname", "Smith Dimension C-0"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:20:59.972338"], ["updated_at", "2018-02-10 17:20:59.972338"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty "], ["lastname", "Smith Dimension C-42"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:20:59.976458"], ["updated_at", "2018-02-10 17:20:59.976458"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty "], ["lastname", "Smith Dimension C-84"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:20:59.978293"], ["updated_at", "2018-02-10 17:20:59.978293"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty "], ["lastname", "Smith Dimension C-126"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:20:59.980279"], ["updated_at", "2018-02-10 17:20:59.980279"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty "], ["lastname", "Smith Dimension C-168"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:20:59.982432"], ["updated_at", "2018-02-10 17:20:59.982432"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty "], ["lastname", "Smith Dimension C-210"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:20:59.984709"], ["updated_at", "2018-02-10 17:20:59.984709"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty "], ["lastname", "Smith Dimension C-252"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:20:59.986695"], ["updated_at", "2018-02-10 17:20:59.986695"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty "], ["lastname", "Smith Dimension C-294"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:20:59.988548"], ["updated_at", "2018-02-10 17:20:59.988548"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty "], ["lastname", "Smith Dimension C-336"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:20:59.990456"], ["updated_at", "2018-02-10 17:20:59.990456"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty "], ["lastname", "Smith Dimension C-378"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:20:59.992213"], ["updated_at", "2018-02-10 17:20:59.992213"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students"  ORDER BY "students"."id" ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty"], ["lastname", "Smith Dimension C-0"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:21:43.658444"], ["updated_at", "2018-02-10 17:21:43.658444"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty"], ["lastname", "Smith Dimension C-42"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:21:43.662792"], ["updated_at", "2018-02-10 17:21:43.662792"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty"], ["lastname", "Smith Dimension C-84"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:21:43.665291"], ["updated_at", "2018-02-10 17:21:43.665291"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty"], ["lastname", "Smith Dimension C-126"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:21:43.667439"], ["updated_at", "2018-02-10 17:21:43.667439"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty"], ["lastname", "Smith Dimension C-168"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:21:43.669631"], ["updated_at", "2018-02-10 17:21:43.669631"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty"], ["lastname", "Smith Dimension C-210"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:21:43.671641"], ["updated_at", "2018-02-10 17:21:43.671641"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty"], ["lastname", "Smith Dimension C-252"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:21:43.673367"], ["updated_at", "2018-02-10 17:21:43.673367"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty"], ["lastname", "Smith Dimension C-294"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:21:43.675846"], ["updated_at", "2018-02-10 17:21:43.675846"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty"], ["lastname", "Smith Dimension C-336"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:21:43.677601"], ["updated_at", "2018-02-10 17:21:43.677601"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty"], ["lastname", "Smith Dimension C-378"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:21:43.679421"], ["updated_at", "2018-02-10 17:21:43.679421"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students"  ORDER BY "students"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.2ms)[0m  SELECT  "students".* FROM "students"  ORDER BY "students"."id" DESC LIMIT 1
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT  "students".* FROM "students"  ORDER BY "students"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.5ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mStudent Load (0.6ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mStudent Load (2.1ms)[0m  [1mSELECT "students".* FROM "students"[0m
+
+
+Started GET "/students" for ::1 at 2018-02-10 10:36:40 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (17.5ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `uniqueFirstName' for #<Student:0x007fce3d12cbf0>):
+     8: 
+     9:   <% @students.each do |student| %>
+    10:     <tr>
+    11:       <td><%= student.uniqueFirstName %></td>
+    12:       <td><%= student.favoritemovie %></td>
+    13:     </tr>
+    14:   <% end %>
+  app/views/students/index.html.erb:11:in `block in _app_views_students_index_html_erb__2365663925942748835_70261879195180'
+  app/views/students/index.html.erb:9:in `_app_views_students_index_html_erb__2365663925942748835_70261879195180'
+
+
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.5ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.7ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (180.3ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 10:38:00 -0700
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 231ms (Views: 228.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 10:38:33 -0700
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty"], ["lastname", "0Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:05.780241"], ["updated_at", "2018-02-10 17:41:05.780241"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty"], ["lastname", "1Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:05.785031"], ["updated_at", "2018-02-10 17:41:05.785031"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty"], ["lastname", "2Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:05.786706"], ["updated_at", "2018-02-10 17:41:05.786706"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty"], ["lastname", "3Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:05.788420"], ["updated_at", "2018-02-10 17:41:05.788420"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty"], ["lastname", "4Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:05.790847"], ["updated_at", "2018-02-10 17:41:05.790847"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty"], ["lastname", "5Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:05.792514"], ["updated_at", "2018-02-10 17:41:05.792514"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty"], ["lastname", "6Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:05.794906"], ["updated_at", "2018-02-10 17:41:05.794906"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty"], ["lastname", "7Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:05.797096"], ["updated_at", "2018-02-10 17:41:05.797096"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty"], ["lastname", "8Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:05.798874"], ["updated_at", "2018-02-10 17:41:05.798874"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty"], ["lastname", "9Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:05.801422"], ["updated_at", "2018-02-10 17:41:05.801422"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Jerry"], ["lastname", "Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:05.804045"], ["updated_at", "2018-02-10 17:41:05.804045"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Rick"], ["lastname", "Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:05.806581"], ["updated_at", "2018-02-10 17:41:05.806581"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/students" for ::1 at 2018-02-10 10:41:21 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 230ms (Views: 218.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 10:41:24 -0700
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.6ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.6ms)
+  [1m[36m (2.7ms)[0m  [1mDROP TABLE "students"[0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstname" varchar, "lastname" varchar, "favoritefood" varchar, "favoritecolor" varchar, "favoritemovie" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.6ms)[0m  DROP TABLE "students"
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstname" varchar, "lastname" varchar, "favoritefood" varchar, "favoritecolor" varchar, "favoritemovie" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty"], ["lastname", "0Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:45.767161"], ["updated_at", "2018-02-10 17:41:45.767161"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty"], ["lastname", "1Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:45.772530"], ["updated_at", "2018-02-10 17:41:45.772530"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty"], ["lastname", "2Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:45.774638"], ["updated_at", "2018-02-10 17:41:45.774638"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty"], ["lastname", "3Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:45.777194"], ["updated_at", "2018-02-10 17:41:45.777194"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty"], ["lastname", "4Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:45.779584"], ["updated_at", "2018-02-10 17:41:45.779584"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty"], ["lastname", "5Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:45.781947"], ["updated_at", "2018-02-10 17:41:45.781947"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty"], ["lastname", "6Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:45.784263"], ["updated_at", "2018-02-10 17:41:45.784263"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty"], ["lastname", "7Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:45.786467"], ["updated_at", "2018-02-10 17:41:45.786467"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty"], ["lastname", "8Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:45.788331"], ["updated_at", "2018-02-10 17:41:45.788331"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty"], ["lastname", "9Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:45.790022"], ["updated_at", "2018-02-10 17:41:45.790022"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Jerry"], ["lastname", "Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:45.792833"], ["updated_at", "2018-02-10 17:41:45.792833"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Rick"], ["lastname", "Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 17:41:45.795509"], ["updated_at", "2018-02-10 17:41:45.795509"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/students" for ::1 at 2018-02-10 10:41:52 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 209ms (Views: 198.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 10:42:06 -0700
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 10:59:42 -0700
+
+SyntaxError (/Users/cherishclark/Documents/Bottega/Projects/imagineLearning/rails-interview/app/helpers/student_helper.rb:11: syntax error, unexpected ==
+    if student.firstname <=> firstnameArr == -1
+                                            ^
+/Users/cherishclark/Documents/Bottega/Projects/imagineLearning/rails-interview/app/helpers/student_helper.rb:12: syntax error, unexpected unary+, expecting keyword_end
+      return student.firstname + student.lastname +"."
+                                                   ^
+/Users/cherishclark/Documents/Bottega/Projects/imagineLearning/rails-interview/app/helpers/student_helper.rb:21: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/helpers/student_helper.rb:11: syntax error, unexpected ==
+  app/helpers/student_helper.rb:12: syntax error, unexpected unary+, expecting keyword_end
+  app/helpers/student_helper.rb:21: syntax error, unexpected keyword_end, expecting end-of-input
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.8ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (178.0ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 10:59:59 -0700
+
+SyntaxError (/Users/cherishclark/Documents/Bottega/Projects/imagineLearning/rails-interview/app/helpers/student_helper.rb:12: syntax error, unexpected unary+, expecting keyword_end
+      return student.firstname + student.lastname +"."
+                                                   ^):
+  app/helpers/student_helper.rb:12: syntax error, unexpected unary+, expecting keyword_end
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.4ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.4ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (151.8ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:00:17 -0700
+
+SyntaxError (/Users/cherishclark/Documents/Bottega/Projects/imagineLearning/rails-interview/app/helpers/student_helper.rb:13: syntax error, unexpected unary+, expecting keyword_end
+      return student.firstname + student.lastname +"."
+                                                   ^):
+  app/helpers/student_helper.rb:13: syntax error, unexpected unary+, expecting keyword_end
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.4ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.8ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (160.3ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:00:35 -0700
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+     9:   <% @students.each do |student| %>
+    10:     <tr>
+    11:       <td><%= student.firstname %></td>
+    12:       <%= unique_firstname %>
+    13:       <td><%= student.favoritemovie %></td>
+    14:     </tr>
+    15:   <% end %>
+  app/helpers/student_helper.rb:4:in `unique_firstname'
+  app/views/students/index.html.erb:12:in `block in _app_views_students_index_html_erb__2902818347100469833_70275414523580'
+  app/views/students/index.html.erb:9:in `_app_views_students_index_html_erb__2902818347100469833_70275414523580'
+
+
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.2ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.0ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (143.1ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:00:55 -0700
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:01:28 -0700
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:01:36 -0700
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:02:18 -0700
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:02:56 -0700
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:03:13 -0700
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.4ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:03:31 -0700
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:03:44 -0700
+
+SyntaxError (/Users/cherishclark/Documents/Bottega/Projects/imagineLearning/rails-interview/app/helpers/student_helper.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    return student.firstname + " " student.lastname
+                                          ^):
+  app/helpers/student_helper.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/students_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.7ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (81.7ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (186.8ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:03:52 -0700
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:09:12 -0700
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.4ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 56ms (Views: 53.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:09:52 -0700
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `count' for true:TrueClass):
+     8: 
+     9:   <% @students.each do |student| %>
+    10:     <tr>
+    11:       <td><%= student.firstname %> <%= unique_firstname(student) %> </td>
+    12: 
+    13:       <td><%= student.favoritemovie %></td>
+    14:     </tr>
+  app/helpers/student_helper.rb:12:in `unique_firstname'
+  app/views/students/index.html.erb:11:in `block in _app_views_students_index_html_erb__2902818347100469833_70275418790240'
+  app/views/students/index.html.erb:9:in `_app_views_students_index_html_erb__2902818347100469833_70275418790240'
+
+
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.1ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (74.7ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (171.3ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:10:07 -0700
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 38ms (Views: 34.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:10:39 -0700
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/students" for ::1 at 2018-02-10 11:11:03 -0700
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 30ms (Views: 27.6ms | ActiveRecord: 0.6ms)

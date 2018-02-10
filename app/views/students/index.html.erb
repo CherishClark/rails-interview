@@ -8,7 +8,8 @@
 
   <% @students.each do |student| %>
     <tr>
-      <td><%= student.firstname %></td>
+      <td><%= unique_firstname(student) %> </td>
+
       <td><%= student.favoritemovie %></td>
     </tr>
   <% end %>
