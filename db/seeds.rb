@@ -14,7 +14,7 @@ Student.create!(
     lastname: "Smith",
     favoritefood: "Pickles",
     favoritecolor: "Green",
-    favoritemovie: "The Fly")
+    favoritemovie: "Anatomy Park")
 
 p "created 1 Jerry"
 
@@ -23,7 +23,7 @@ Student.create!(
     lastname: "Smith",
     favoritefood: "Pickles",
     favoritecolor: "Green",
-    favoritemovie: "The Fly")
+    favoritemovie: "Mad Max")
 
 
 p "created 1 Rick"

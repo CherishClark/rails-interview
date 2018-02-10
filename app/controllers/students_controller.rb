@@ -1,8 +1,14 @@
 class StudentsController < ApplicationController
   before_action :set_post, only: [:show]
-  
+
   def index
-    @students = Student.all
+
+    @students = if params[:movie]
+      Student.where('favoritemovie LIKE?', "%#{params[:movie]}%")
+    else
+      @students = Student.all
+    end
+
   end
 
   def show
