@@ -253,3 +253,44 @@ NameError (uninitialized constant StudentsController::Students):
   Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
   Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (142.7ms)
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE "students"[0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstname" varchar, "lastname" varchar, "favoritefood" varchar, "favoritecolor" varchar, "favoritemovie" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (2.2ms)[0m  DROP TABLE "students"
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstname" varchar, "lastname" varchar, "favoritefood" varchar, "favoritecolor" varchar, "favoritemovie" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty dimension C-0"], ["lastname", "Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 16:54:16.954320"], ["updated_at", "2018-02-10 16:54:16.954320"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty dimension C-1"], ["lastname", "Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 16:54:16.959105"], ["updated_at", "2018-02-10 16:54:16.959105"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty dimension C-2"], ["lastname", "Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 16:54:16.960924"], ["updated_at", "2018-02-10 16:54:16.960924"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty dimension C-3"], ["lastname", "Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 16:54:16.963061"], ["updated_at", "2018-02-10 16:54:16.963061"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty dimension C-4"], ["lastname", "Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 16:54:16.965165"], ["updated_at", "2018-02-10 16:54:16.965165"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty dimension C-5"], ["lastname", "Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 16:54:16.967476"], ["updated_at", "2018-02-10 16:54:16.967476"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty dimension C-6"], ["lastname", "Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 16:54:16.970378"], ["updated_at", "2018-02-10 16:54:16.970378"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty dimension C-7"], ["lastname", "Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 16:54:16.972806"], ["updated_at", "2018-02-10 16:54:16.972806"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["firstname", "Morty dimension C-8"], ["lastname", "Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 16:54:16.975437"], ["updated_at", "2018-02-10 16:54:16.975437"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("firstname", "lastname", "favoritefood", "favoritecolor", "favoritemovie", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["firstname", "Morty dimension C-9"], ["lastname", "Smith"], ["favoritefood", "Pickles"], ["favoritecolor", "Green"], ["favoritemovie", "The Fly"], ["created_at", "2018-02-10 16:54:16.977206"], ["updated_at", "2018-02-10 16:54:16.977206"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students"  ORDER BY "students"."id" ASC LIMIT 1[0m
