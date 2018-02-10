@@ -1,27 +1,7 @@
 <h1>Listing students</h1>
 
-<%= form_tag("/students", method: :get) do %>
-    Search by Movie
-  <%= text_field_tag :movie %>
-  <%= submit_tag "Search" %>
-<% end %>
+<%= render 'search_form' %>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Favorite Movie</th>
-    <th>Favorite Food</th>
-    <th>Favorite Color</th>
-  </tr>
-
-  <% @students.each do |student| %>
-    <tr>
-      <td><%= unique_firstname(student) %> </td>
-      <td><%= student.favoritemovie %></td>
-      <td><%= student.favoritefood %></td>
-      <td><%= student.favoritecolor %></td>
-    </tr>
-  <% end %>
-</table>
+<%= render 'students' %>
 
 
