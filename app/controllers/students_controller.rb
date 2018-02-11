@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-  before_action :set_post, only: [:show]
+  before_action :set_student, only: [:show]
 
   def index
 
@@ -12,8 +12,13 @@ class StudentsController < ApplicationController
     render json: @students
   end
 
+  def js
+  end
+
   def show
   end
+
+
 
   private
     def student_params
