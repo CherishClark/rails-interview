@@ -11,10 +11,11 @@
 // about supported directives.
 //
 // 
-//= require d3/d3
-//= require underscore/underscore
+
 //= require jquery
 //= require jquery_ujs
+//= require d3/d3
+//= require underscore/underscore
 //= require angular
 //= require bootstrap-sprockets
 //= require turbolinks

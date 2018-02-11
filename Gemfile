@@ -50,3 +50,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'bower-rails', '~> 0.11.0'
+gem 'angularjs-rails', '~> 1.6', '>= 1.6.8'
