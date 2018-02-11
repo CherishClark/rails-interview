@@ -9,6 +9,7 @@ class StudentsController < ApplicationController
       @students = Student.all
     end
 
+    render json: @students
   end
 
   def show
