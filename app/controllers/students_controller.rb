@@ -13,6 +13,7 @@ class StudentsController < ApplicationController
   end
 
   def js
+    render :file => 'public/students/index.html'
   end
 
   def show
