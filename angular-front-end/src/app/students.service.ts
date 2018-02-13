@@ -6,12 +6,14 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class StudentsService {
-  private url = 'students/js'
+  private studentsUrl = 'http://localhost:3000/students'
 
-  constructor(private http: Http) { }
+  constructor(
+    private http: Http
+    ) { }
 
   getStudents() {
-    return this.http.get(this.url).map(res=> res.json())
+    return this.http.get(this.studentsUrl).map((response: Response) => <Student[]>response.json())
   }
 
 }

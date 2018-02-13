@@ -1,2 +1,12 @@
 <h1>Listing Students</h1>
 
+
+<% content_for :head do %>
+<base href="/angular-front-end">
+<% end %>
+ 
+<app-root>Loading...</app-root>
+ 
+<%= javascript_include_tag "angular-front-end/inline" %>
+<%= javascript_include_tag "angular-front-end/styles.bundle" %>
+<%= javascript_include_tag "angular-front-end/main.bundle" %>
