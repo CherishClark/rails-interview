@@ -13,7 +13,7 @@ export class StudentsService {
     ) { }
 
   getStudents() {
-    return this.http.get(this.studentsUrl).map((response: Response) => <Student[]>response.json())
+    return this.http.get(this.studentsUrl).map((response: Response) => response.json())
   }
 
 }
