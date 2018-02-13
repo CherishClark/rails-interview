@@ -18,5 +18,4 @@ export class StudentsComponent implements OnInit {
     this.studentsService.getStudents().
     subscribe(students => this.students = students)
   }
-
 }
