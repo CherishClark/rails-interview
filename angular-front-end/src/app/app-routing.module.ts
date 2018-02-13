@@ -5,8 +5,8 @@ import {HttpClientModule, HttpClient} from '@angular/common/http';
 import { StudentsComponent } from './students/students.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/students', pathMatch: 'full' },
-  { path: 'students', component: StudentsComponent },
+  { path: '', redirectTo: '/students/js', pathMatch: 'full' },
+  { path: 'students/js', component: StudentsComponent },
 ]
 
 @NgModule({
