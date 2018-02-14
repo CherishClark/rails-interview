@@ -9,10 +9,8 @@ import { StudentsService } from '../students.service'
 })
 export class StudentsComponent implements OnInit {
 
-
+   students = []
   constructor(private studentsService: StudentsService) { }
-
-  students = []
 
   ngOnInit() {
     this.studentsService.getStudents().

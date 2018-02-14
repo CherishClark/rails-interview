@@ -7,21 +7,20 @@
   <table class="table table-hover">
     <thead>
       <tr>
-        <th scope="col" class="students-header">Name</th>
-        <th scope="col" class="students-header">Favorite Movie</th>
-        <th scope="col" class="students-header">Favorite Food</th>
-        <th scope="col" class="students-header">Favorite Color</th>
+        <th scope="col" class="students-header" sortable-column="firstname">First Name</th>
+        <th scope="col" class="students-header" sortable-column="favoritemovie">Favorite Movie</th>
+        <th scope="col" class="students-header" sortable-column="favoritefood">Favorite Food</th>
+        <th scope="col" class="students-header" sortable-column="favoritecolor">Favorite Color</th>
       </tr>
     </thead>
     <tbody>
-    <% *ngFor='let student of students' %>
-      <tr class="students-row">
-        <td class="students-data"><%= unique_firstname(student) %> </td>
-        <td class="students-data"><%= student.favoritemovie %></td>
-        <td class="students-data"><%= student.favoritefood %></td>
-        <td class="students-data"><%= student.favoritecolor %></td>
+     
+      <tr class="students-row" *ngFor='let student of students'>
+        <td class="students-data">{{ student.firstname }} </td>
+        <td class="students-data">{{ student.favoritefood }}</td>
+        <td class="students-data">{{ student.favoritecolor }}</td>
+        <td class="students-data">{{ student.favoritemovie }}</td>
       </tr>
-    <% end %>
     </tbody>
   </table>
 </div>
