@@ -1,27 +1,40 @@
+<!-- <div>
+  <mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="firstname">
+        <mat-header-cell *matHeaderCellDef> First Name </mat-header-cell>
+        <mat-cell *matCellDef="let student"> {{student.firstname}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="favoritefood">
+      <mat-header-cell *matHeaderCellDef> Favorite Food </mat-header-cell>
+      <mat-cell *matCellDef="let student"> {{student.favoritefood}}</mat-cell>
+    </ng-container>
+      <ng-container matColumnDef="favoritecolor">
+      <mat-header-cell *matHeaderCellDef> Favorite Color </mat-header-cell>
+      <mat-cell *matCellDef="let student"> {{student.favoritecolor}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="favoritemovie">
+      <mat-header-cell *matHeaderCellDef> Favorite Movie </mat-header-cell>
+      <mat-cell *matCellDef="let student"> {{student.favoritemovie}}</mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef=
+    "displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+  </mat-table>
+</div> -->
 
-<p>
-  students works!
-</p>
+<table matSort (matSortChange)="sortData($event)">
+  <tr>
+    <th mat-sort-header="firstname">FirstName</th>
+    <th mat-sort-header="favoritefood">Food</th>
+    <th mat-sort-header="favoritecolor">Color</th>
+    <th mat-sort-header="favoritemovie">Movie</th>
+  </tr>
 
-<div id="table-container">
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th scope="col" class="students-header" sortable-column="firstname">First Name</th>
-        <th scope="col" class="students-header" sortable-column="favoritemovie">Favorite Movie</th>
-        <th scope="col" class="students-header" sortable-column="favoritefood">Favorite Food</th>
-        <th scope="col" class="students-header" sortable-column="favoritecolor">Favorite Color</th>
-      </tr>
-    </thead>
-    <tbody>
-     
-      <tr class="students-row" *ngFor='let student of students'>
-        <td class="students-data">{{ student.firstname }} </td>
-        <td class="students-data">{{ student.favoritefood }}</td>
-        <td class="students-data">{{ student.favoritecolor }}</td>
-        <td class="students-data">{{ student.favoritemovie }}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+  <tr *ngFor="let student of sortedData">
+    <td>{{student.firstname}}</td>
+    <td>{{student.favoritefood}}</td>
+    <td>{{student.favoritecolor}}</td>
+    <td>{{student.favoritemovie}}</td>
 
+  </tr>
+</table>
