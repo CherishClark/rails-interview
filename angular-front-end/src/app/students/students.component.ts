@@ -19,15 +19,13 @@ export class StudentsComponent implements OnInit {
   students = []
   sortedData;
 
-  dataSource = new StudentDataSource(this.studentsService);
-
   constructor(private studentsService: StudentsService) { }
 
   filteredFirstname = '';
 
   ngOnInit() {
-    this.studentsService.getStudents().
-    subscribe(students => {this.students = students; this.sortedData = this.students.slice();});
+
+    this.studentsService.getStudents().then(students => {this.students = students; this.sortedData = this.students.slice();} ).catch(error => console.log(error));
   }
 
   sortData(sort: Sort) {
@@ -52,16 +50,4 @@ export class StudentsComponent implements OnInit {
 
 function compare(a, b, isAsc) {
   return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
-}
-
-export class StudentDataSource extends DataSource<any> {
-  constructor(private studentService: StudentsService) {
-    super();
-  }
-
-  connect(): Observable<Student[]> {
-    return this.studentService.getStudents()
-  }
-
-  disconnect() {}
 }
