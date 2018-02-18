@@ -1,4 +1,5 @@
 class StudentsController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_action :set_student, only: [:show]
 
   def index
@@ -8,12 +9,33 @@ class StudentsController < ApplicationController
     else
       @students = Student.all
     end
+    if request.headers["Accept"].include?('application/json') 
+        render json: @students
+    else
+      @students
+    end
+  end
 
-    render json: @students
+  
+  def foo
+
+    p params["valid"], params["valid"] == "true"
+    if params["valid"] == "true"
+      render :nothing => true
+      response.body='BAR'
+      response.status = 202 
+    else
+      raise 'error'
+    end
+
+
+
   end
 
   def js
   end
+
+
 
   def show
   end
