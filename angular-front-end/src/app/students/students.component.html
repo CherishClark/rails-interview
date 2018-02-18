@@ -1,26 +1,4 @@
-<!-- <div>
-  <mat-table [dataSource]="dataSource">
-    <ng-container matColumnDef="firstname">
-        <mat-header-cell *matHeaderCellDef> First Name </mat-header-cell>
-        <mat-cell *matCellDef="let student"> {{student.firstname}}</mat-cell>
-    </ng-container>
-    <ng-container matColumnDef="favoritefood">
-      <mat-header-cell *matHeaderCellDef> Favorite Food </mat-header-cell>
-      <mat-cell *matCellDef="let student"> {{student.favoritefood}}</mat-cell>
-    </ng-container>
-      <ng-container matColumnDef="favoritecolor">
-      <mat-header-cell *matHeaderCellDef> Favorite Color </mat-header-cell>
-      <mat-cell *matCellDef="let student"> {{student.favoritecolor}}</mat-cell>
-    </ng-container>
-    <ng-container matColumnDef="favoritemovie">
-      <mat-header-cell *matHeaderCellDef> Favorite Movie </mat-header-cell>
-      <mat-cell *matCellDef="let student"> {{student.favoritemovie}}</mat-cell>
-    </ng-container>
-    <mat-header-row *matHeaderRowDef=
-    "displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
-  </mat-table>
-</div> -->
+<input type ='text' [(ngModel)] = 'filteredFirstname'>
 
 <table matSort (matSortChange)="sortData($event)">
   <tr>
@@ -30,7 +8,7 @@
     <th mat-sort-header="favoritemovie">Movie</th>
   </tr>
 
-  <tr *ngFor="let student of sortedData">
+  <tr *ngFor="let student of sortedData | filter:filteredFirstname: 'firstname'">
     <td>{{student.firstname}}</td>
     <td>{{student.favoritefood}}</td>
     <td>{{student.favoritecolor}}</td>

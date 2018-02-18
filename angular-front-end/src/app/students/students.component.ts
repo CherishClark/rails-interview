@@ -5,6 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import { DataSource } from '@angular/cdk/collections';
 import {Sort} from '@angular/material';
 import { MatSortModule, MatTableModule } from '@angular/material';
+import { FilterPipe } from '../filter.pipe'
 
 
 @Component({
@@ -14,12 +15,15 @@ import { MatSortModule, MatTableModule } from '@angular/material';
 })
 export class StudentsComponent implements OnInit {
 
+
   students = []
   sortedData;
 
   dataSource = new StudentDataSource(this.studentsService);
 
   constructor(private studentsService: StudentsService) { }
+
+  filteredFirstname = '';
 
   ngOnInit() {
     this.studentsService.getStudents().

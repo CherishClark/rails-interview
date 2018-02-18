@@ -10,12 +10,17 @@ import { AppComponent } from './app.component';
 import { StudentsComponent } from './students/students.component';
 import { StudentsService } from './students.service';
 
-import { AppRoutingModule } from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms'
+import { ShortenPipe } from './shorten.pipe'
+import { FilterPipe } from './filter.pipe'
 
 @NgModule({
   declarations: [
     AppComponent,
-    StudentsComponent
+    StudentsComponent,
+    ShortenPipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
@@ -25,6 +30,7 @@ import { AppRoutingModule } from './app-routing.module'
     MatTableModule,
     MatSortModule,
     BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [ StudentsService ],
   bootstrap: [ AppComponent ],
