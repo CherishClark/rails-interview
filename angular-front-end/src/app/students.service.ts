@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {  Http, Response, Headers, RequestOptions } from '@angular/http';
-import { HttpClient, HttpHeaders } from '@angular/common/http'
+//import {  Http, Response, Headers, RequestOptions } from '@angular/http';
+import { HttpClient, HttpHeaders, HttpClientModule } from '@angular/common/http'
 import { Observable } from 'rxjs/Observable'
 import { Student } from './students/student.model'
 import 'rxjs/add/operator/map';
@@ -18,7 +18,30 @@ export class StudentsService {
     ) { }
 
   getStudents(): Promise<any> {
-    return fetch(this.studentsUrl).then(res => res.json()).catch(error => console.log(error));
+
+    const headerDict = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json',
+  'Access-Control-Allow-Headers': 'Content-Type',
+}
+
+const requestOptions = {            
+  headers: new HttpHeaders(headerDict), 
+};
+
+// return this.http.get(this.studentsUrl, requestOptions)
+
+    const myHeaders = new Headers();
+    myHeaders.append('Accept', 'application/json')
+  
+
+    // const studentsRequest = new Request(this.studentsUrl)
+
+
+    return fetch(this.studentsUrl, {
+      method: "get",
+      headers: myHeaders,
+    }).then(res => res.json()).catch(error => console.log(error));
   }
 }
 
