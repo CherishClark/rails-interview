@@ -14213,3 +14213,675 @@ Processing by StudentsController#foo as */*
   Parameters: {"valid"=>"true"}
   Rendered text template (0.0ms)
 Completed 202 Accepted in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/foo?valid=%22true%22" for ::1 at 2018-02-18 21:56:08 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#foo as */*
+  Parameters: {"valid"=>"\"true\""}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+RuntimeError (error):
+  app/controllers/students_controller.rb:25:in `foo'
+
+
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (119.4ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.8ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/cherishclark/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (235.7ms)
+
+
+Started POST "/foo?valid=true" for ::1 at 2018-02-18 21:56:17 -0700
+Processing by StudentsController#foo as */*
+  Parameters: {"valid"=>"true"}
+  Rendered text template (0.0ms)
+Completed 202 Accepted in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/js" for ::1 at 2018-02-18 21:56:27 -0700
+Processing by StudentsController#js as HTML
+  Rendered students/js.html.erb within layouts/application (917.4ms)
+Completed 200 OK in 1093ms (Views: 1091.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular-front-end/main.bundle.self-d6e073406643cf08fe0e9fc579de8ac51795c5b1e97bbad9dcd93184ab03373d.js?body=1" for ::1 at 2018-02-18 21:56:29 -0700
+
+
+Started GET "/assets/angular-front-end/polyfills.bundle.js.map" for ::1 at 2018-02-18 21:56:30 -0700
+
+
+Started GET "/assets/angular-front-end/inline.bundle.js.map" for ::1 at 2018-02-18 21:56:30 -0700
+
+
+Started GET "/assets/angular-front-end/styles.bundle.js.map" for ::1 at 2018-02-18 21:56:30 -0700
+
+
+Started GET "/assets/angular-front-end/vendor.bundle.js.map" for ::1 at 2018-02-18 21:56:30 -0700
+
+
+Started GET "/assets/angular-front-end/main.bundle.js.map" for ::1 at 2018-02-18 21:56:30 -0700
+
+
+Started GET "/students" for ::1 at 2018-02-18 21:56:30 -0700
+Processing by StudentsController#index as JSON
+  [1m[35mStudent Load (0.8ms)[0m  SELECT "students".* FROM "students"
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/students/js" for ::1 at 2018-02-18 21:58:57 -0700
+Processing by StudentsController#js as HTML
+  Rendered students/js.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 1871ms (Views: 1868.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f80c2b25d9c76e8408ad33b666bc763c0e26407fedee6175c7aa8a82e00fb7a4.css?body=1" for ::1 at 2018-02-18 21:58:58 -0700
+
+
+Started GET "/assets/angular-front-end/inline.bundle.js.map" for ::1 at 2018-02-18 21:58:59 -0700
+
+
+Started GET "/assets/angular-front-end/polyfills.bundle.js.map" for ::1 at 2018-02-18 21:58:59 -0700
+
+
+Started GET "/assets/angular-front-end/styles.bundle.js.map" for ::1 at 2018-02-18 21:58:59 -0700
+
+
+Started GET "/assets/angular-front-end/main.bundle.js.map" for ::1 at 2018-02-18 21:58:59 -0700
+
+
+Started GET "/assets/angular-front-end/vendor.bundle.js.map" for ::1 at 2018-02-18 21:58:59 -0700
+
+
+Started GET "/students" for ::1 at 2018-02-18 21:58:59 -0700
+Processing by StudentsController#index as JSON
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students/js" for ::1 at 2018-02-18 21:59:26 -0700
+Processing by StudentsController#js as HTML
+  Rendered students/js.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 1648ms (Views: 1647.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-418f3adebbcb994587e36d8b8349c3fd152b1b49ced031ac049c5c2dd0ed67d0.css?body=1" for ::1 at 2018-02-18 21:59:28 -0700
+
+
+Started GET "/assets/angular-front-end/inline.bundle.js.map" for ::1 at 2018-02-18 21:59:29 -0700
+
+
+Started GET "/assets/angular-front-end/styles.bundle.js.map" for ::1 at 2018-02-18 21:59:29 -0700
+
+
+Started GET "/assets/angular-front-end/main.bundle.js.map" for ::1 at 2018-02-18 21:59:29 -0700
+
+
+Started GET "/assets/angular-front-end/polyfills.bundle.js.map" for ::1 at 2018-02-18 21:59:29 -0700
+
+
+Started GET "/assets/angular-front-end/vendor.bundle.js.map" for ::1 at 2018-02-18 21:59:29 -0700
+
+
+Started GET "/students" for ::1 at 2018-02-18 21:59:29 -0700
+Processing by StudentsController#index as JSON
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/js" for ::1 at 2018-02-18 22:00:09 -0700
+Processing by StudentsController#js as HTML
+  Rendered students/js.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 1803ms (Views: 1799.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9c3db91b5c91c2766251b2dcd290a0a8c19edc12bb2819625c56f4489d08eb39.css?body=1" for ::1 at 2018-02-18 22:00:11 -0700
+
+
+Started GET "/assets/angular-front-end/inline.bundle.js.map" for ::1 at 2018-02-18 22:00:12 -0700
+
+
+Started GET "/assets/angular-front-end/polyfills.bundle.js.map" for ::1 at 2018-02-18 22:00:12 -0700
+
+
+Started GET "/assets/angular-front-end/styles.bundle.js.map" for ::1 at 2018-02-18 22:00:12 -0700
+
+
+Started GET "/assets/angular-front-end/vendor.bundle.js.map" for ::1 at 2018-02-18 22:00:12 -0700
+
+
+Started GET "/assets/angular-front-end/main.bundle.js.map" for ::1 at 2018-02-18 22:00:12 -0700
+
+
+Started GET "/students" for ::1 at 2018-02-18 22:00:12 -0700
+Processing by StudentsController#index as JSON
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students/js" for ::1 at 2018-02-18 22:00:34 -0700
+Processing by StudentsController#js as HTML
+  Rendered students/js.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 1703ms (Views: 1702.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0631306a6d4bcd65388c55a0951f0a28d7e07afcc1ebc8b081216a61b8de092d.css?body=1" for ::1 at 2018-02-18 22:00:36 -0700
+
+
+Started GET "/assets/angular-front-end/inline.bundle.js.map" for ::1 at 2018-02-18 22:00:37 -0700
+
+
+Started GET "/assets/angular-front-end/polyfills.bundle.js.map" for ::1 at 2018-02-18 22:00:37 -0700
+
+
+Started GET "/assets/angular-front-end/vendor.bundle.js.map" for ::1 at 2018-02-18 22:00:37 -0700
+
+
+Started GET "/assets/angular-front-end/main.bundle.js.map" for ::1 at 2018-02-18 22:00:37 -0700
+
+
+Started GET "/assets/angular-front-end/styles.bundle.js.map" for ::1 at 2018-02-18 22:00:37 -0700
+
+
+Started GET "/students" for ::1 at 2018-02-18 22:00:37 -0700
+Processing by StudentsController#index as JSON
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/js" for ::1 at 2018-02-18 22:00:59 -0700
+Processing by StudentsController#js as HTML
+  Rendered students/js.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 1682ms (Views: 1681.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2feef34e5a9b881c6e244a03c12557640078332dbcd0e2f546342600f2b8f41c.css?body=1" for ::1 at 2018-02-18 22:01:00 -0700
+
+
+Started GET "/assets/angular-front-end/inline.bundle.js.map" for ::1 at 2018-02-18 22:01:01 -0700
+
+
+Started GET "/assets/angular-front-end/styles.bundle.js.map" for ::1 at 2018-02-18 22:01:01 -0700
+
+
+Started GET "/assets/angular-front-end/polyfills.bundle.js.map" for ::1 at 2018-02-18 22:01:01 -0700
+
+
+Started GET "/assets/angular-front-end/vendor.bundle.js.map" for ::1 at 2018-02-18 22:01:01 -0700
+
+
+Started GET "/assets/angular-front-end/main.bundle.js.map" for ::1 at 2018-02-18 22:01:01 -0700
+
+
+Started GET "/students" for ::1 at 2018-02-18 22:01:01 -0700
+Processing by StudentsController#index as JSON
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students/js" for ::1 at 2018-02-18 22:01:13 -0700
+Processing by StudentsController#js as HTML
+  Rendered students/js.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 1600ms (Views: 1599.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b777e4198f71bf5c8e038a5cdda3bcebe9682818e66ac7d5ea4c5e37023249ea.css?body=1" for ::1 at 2018-02-18 22:01:15 -0700
+
+
+Started GET "/assets/angular-front-end/inline.bundle.js.map" for ::1 at 2018-02-18 22:01:15 -0700
+
+
+Started GET "/assets/angular-front-end/polyfills.bundle.js.map" for ::1 at 2018-02-18 22:01:15 -0700
+
+
+Started GET "/assets/angular-front-end/styles.bundle.js.map" for ::1 at 2018-02-18 22:01:15 -0700
+
+
+Started GET "/assets/angular-front-end/vendor.bundle.js.map" for ::1 at 2018-02-18 22:01:15 -0700
+
+
+Started GET "/assets/angular-front-end/main.bundle.js.map" for ::1 at 2018-02-18 22:01:15 -0700
+
+
+Started GET "/students" for ::1 at 2018-02-18 22:01:15 -0700
+Processing by StudentsController#index as JSON
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2018-02-18 22:01:23 -0700
+Processing by StudentsController#index as HTML
+  Rendered students/_search_form.html.erb (0.4ms)
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/_students.html.erb (5.1ms)
+  Rendered students/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students?utf8=%E2%9C%93&movie=the+fly&commit=Search" for ::1 at 2018-02-18 22:01:43 -0700
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>"the fly", "commit"=>"Search"}
+  Rendered students/_search_form.html.erb (0.1ms)
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE (favoritemovie LIKE'%the fly%')
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/_students.html.erb (5.4ms)
+  Rendered students/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/students?utf8=%E2%9C%93&movie=the+fly&commit=Search" for ::1 at 2018-02-18 22:03:06 -0700
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>"the fly", "commit"=>"Search"}
+  Rendered students/_search_form.html.erb (30.1ms)
+  [1m[36mStudent Load (1.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE (favoritemovie LIKE'%the fly%')[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/_students.html.erb (19.4ms)
+  Rendered students/index.html.erb within layouts/application (61.9ms)
+Completed 200 OK in 1913ms (Views: 1903.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.self-4782a1fb7bc794b74f2f779463dca33a8411d9668f0dcc426697022801412d46.css?body=1" for ::1 at 2018-02-18 22:03:08 -0700
+
+
+Started GET "/students?utf8=%E2%9C%93&movie=the+fly&commit=Search" for ::1 at 2018-02-18 22:03:21 -0700
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>"the fly", "commit"=>"Search"}
+  Rendered students/_search_form.html.erb (0.2ms)
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE (favoritemovie LIKE'%the fly%')
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/_students.html.erb (7.0ms)
+  Rendered students/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 1677ms (Views: 1675.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-5368fe1c140ebc2ad37b0d82b38c539df02efeed474dccdce9db520be41dc9f0.css?body=1" for ::1 at 2018-02-18 22:03:23 -0700
+
+
+Started GET "/students?utf8=%E2%9C%93&movie=the+fly&commit=Search" for ::1 at 2018-02-18 22:03:40 -0700
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>"the fly", "commit"=>"Search"}
+  Rendered students/_search_form.html.erb (0.1ms)
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE (favoritemovie LIKE'%the fly%')[0m
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/_students.html.erb (4.4ms)
+  Rendered students/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 1422ms (Views: 1421.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-0dfb644d7b3789ba0f22aec42abb113dc1b64d1fccc93752cbb37d418f07f95d.css?body=1" for ::1 at 2018-02-18 22:03:42 -0700
+
+
+Started GET "/students?utf8=%E2%9C%93&movie=the+fly&commit=Search" for ::1 at 2018-02-18 22:05:36 -0700
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>"the fly", "commit"=>"Search"}
+  Rendered students/_search_form.html.erb (0.6ms)
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" WHERE (favoritemovie LIKE'%the fly%')
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/_students.html.erb (11.8ms)
+  Rendered students/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 2221ms (Views: 2218.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-f0e8ee106a3e40c095ff79d56b3122952ceefe11da4433593be859bd5c78034d.css?body=1" for ::1 at 2018-02-18 22:05:38 -0700
+
+
+Started GET "/students?utf8=%E2%9C%93&movie=the+fly&commit=Search" for ::1 at 2018-02-18 22:05:54 -0700
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>"the fly", "commit"=>"Search"}
+  Rendered students/_search_form.html.erb (0.2ms)
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" WHERE (favoritemovie LIKE'%the fly%')[0m
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/_students.html.erb (4.9ms)
+  Rendered students/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 1494ms (Views: 1493.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e0930218f829873ec567e33a84f02f0a2de1088699d5adec962afb543f1c181f.css?body=1" for ::1 at 2018-02-18 22:05:55 -0700
+
+
+Started GET "/students?utf8=%E2%9C%93&movie=the+fly&commit=Search" for ::1 at 2018-02-18 22:06:14 -0700
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>"the fly", "commit"=>"Search"}
+  Rendered students/_search_form.html.erb (0.4ms)
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE (favoritemovie LIKE'%the fly%')
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/_students.html.erb (7.6ms)
+  Rendered students/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 1610ms (Views: 1608.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-a07b6e1d6762e0934e91e208a22b6fc8215eaa598e2f7c4800646b10f22c76c1.css?body=1" for ::1 at 2018-02-18 22:06:16 -0700
+
+
+Started GET "/students?utf8=%E2%9C%93&movie=the+fly&commit=Search" for ::1 at 2018-02-18 22:06:32 -0700
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>"the fly", "commit"=>"Search"}
+  Rendered students/_search_form.html.erb (0.2ms)
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" WHERE (favoritemovie LIKE'%the fly%')[0m
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/_students.html.erb (5.7ms)
+  Rendered students/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 1335ms (Views: 1334.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-720ee377c359b8bd09fc8d60d60ce910366aeadb6ab4835f13925d16631a2c43.css?body=1" for ::1 at 2018-02-18 22:06:34 -0700
+
+
+Started GET "/students?utf8=%E2%9C%93&movie=the+fly&commit=Search" for ::1 at 2018-02-18 22:07:24 -0700
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>"the fly", "commit"=>"Search"}
+  Rendered students/_search_form.html.erb (0.3ms)
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" WHERE (favoritemovie LIKE'%the fly%')
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/_students.html.erb (7.2ms)
+  Rendered students/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 1681ms (Views: 1679.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-52646fa608fcec01d108a3cbd0086dd55747d45e31440e5a2572e590dc0631fe.css?body=1" for ::1 at 2018-02-18 22:07:26 -0700
+
+
+Started GET "/students?utf8=%E2%9C%93&movie=the+fly&commit=Search" for ::1 at 2018-02-18 22:07:39 -0700
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>"the fly", "commit"=>"Search"}
+  Rendered students/_search_form.html.erb (0.2ms)
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE (favoritemovie LIKE'%the fly%')[0m
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/_students.html.erb (4.6ms)
+  Rendered students/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 1718ms (Views: 1717.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-56564dc0ab75ac10c184631d5be97d6b28ef14727e9d148076f8b842a559f226.css?body=1" for ::1 at 2018-02-18 22:07:40 -0700
+
+
+Started GET "/students?utf8=%E2%9C%93&movie=the+fly&commit=Search" for ::1 at 2018-02-18 22:08:23 -0700
+Processing by StudentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>"the fly", "commit"=>"Search"}
+  Rendered students/_search_form.html.erb (0.5ms)
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE (favoritemovie LIKE'%the fly%')
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/_students.html.erb (4.3ms)
+  Rendered students/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students/js" for ::1 at 2018-02-18 22:09:18 -0700
+Processing by StudentsController#js as HTML
+  Rendered students/js.html.erb within layouts/application (151.7ms)
+Completed 200 OK in 328ms (Views: 322.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular-front-end/styles.bundle.self-411bb97841109838d535f53dd905c5c15cf3b9075fb52309ea9ef2f60c98a2ac.js?body=1" for ::1 at 2018-02-18 22:09:18 -0700
+
+
+Started GET "/students" for ::1 at 2018-02-18 22:09:19 -0700
+Processing by StudentsController#index as JSON
+  [1m[36mStudent Load (1.3ms)[0m  [1mSELECT "students".* FROM "students"[0m
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/angular-front-end/inline.bundle.js.map" for ::1 at 2018-02-18 22:09:34 -0700
+
+
+Started GET "/assets/angular-front-end/polyfills.bundle.js.map" for ::1 at 2018-02-18 22:09:34 -0700
+
+
+Started GET "/assets/angular-front-end/styles.bundle.js.map" for ::1 at 2018-02-18 22:09:34 -0700
+
+
+Started GET "/assets/angular-front-end/vendor.bundle.js.map" for ::1 at 2018-02-18 22:09:34 -0700
+
+
+Started GET "/assets/angular-front-end/main.bundle.js.map" for ::1 at 2018-02-18 22:09:34 -0700
+
+
+Started GET "/students/" for ::1 at 2018-02-18 22:10:52 -0700
+Processing by StudentsController#index as HTML
+  Rendered students/_search_form.html.erb (0.6ms)
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/_students.html.erb (13.6ms)
+  Rendered students/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 92ms (Views: 91.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students/" for ::1 at 2018-02-18 22:14:23 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StudentsController#index as HTML
+  Rendered students/_search_form.html.erb (0.7ms)
+  [1m[35mStudent Load (1.3ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/_students.html.erb (13.9ms)
+  Rendered students/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 920ms (Views: 907.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-18 22:14:30 -0700
+Processing by StudentsController#index as HTML
+  Rendered students/_search_form.html.erb (0.2ms)
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/_students.html.erb (4.9ms)
+  Rendered students/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 88ms (Views: 87.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/students/js" for ::1 at 2018-02-18 22:14:39 -0700
+Processing by StudentsController#js as HTML
+  Rendered students/js.html.erb within layouts/application (185.3ms)
+Completed 200 OK in 236ms (Views: 235.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular-front-end/inline.bundle.js.map" for ::1 at 2018-02-18 22:14:40 -0700
+
+
+Started GET "/assets/angular-front-end/polyfills.bundle.js.map" for ::1 at 2018-02-18 22:14:40 -0700
+
+
+Started GET "/assets/angular-front-end/styles.bundle.js.map" for ::1 at 2018-02-18 22:14:40 -0700
+
+
+Started GET "/assets/angular-front-end/vendor.bundle.js.map" for ::1 at 2018-02-18 22:14:40 -0700
+
+
+Started GET "/assets/angular-front-end/main.bundle.js.map" for ::1 at 2018-02-18 22:14:40 -0700
+
+
+Started GET "/students" for ::1 at 2018-02-18 22:14:40 -0700
+Processing by StudentsController#index as JSON
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/students" for ::1 at 2018-02-18 22:14:47 -0700
+Processing by StudentsController#index as HTML
+  Rendered students/_search_form.html.erb (0.2ms)
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  Rendered students/_students.html.erb (4.6ms)
+  Rendered students/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-18 22:15:03 -0700
+Processing by StudentsController#index as HTML
+  Rendered students/_search_form.html.erb (0.2ms)
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/_students.html.erb (6.3ms)
+  Rendered students/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.3ms)

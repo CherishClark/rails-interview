@@ -8,19 +8,19 @@ import { MatTableModule, MatSortModule } from '@angular/material'
 
 import { AppComponent } from './app.component';
 import { StudentsComponent } from './students/students.component';
-import { StudentsService } from './students.service';
+import { StudentsService } from './students/students.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms'
-import { ShortenPipe } from './shorten.pipe'
-import { FilterPipe } from './filter.pipe'
+import { FilterPipe } from './pipes/filter.pipe'
+import { UniqueFirstNamePipe} from './pipes/unique-first-name.pipe'
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentsComponent,
-    ShortenPipe,
-    FilterPipe
+    FilterPipe,
+    UniqueFirstNamePipe
   ],
   imports: [
     BrowserModule,

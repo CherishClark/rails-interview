@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Student } from './student.model';
-import { StudentsService } from '../students.service';
+import { StudentsService } from '../students/students.service';
 import { Observable } from 'rxjs/Observable';
 import { DataSource } from '@angular/cdk/collections';
-import {Sort} from '@angular/material';
+import { Sort } from '@angular/material';
 import { MatSortModule, MatTableModule } from '@angular/material';
-import { FilterPipe } from '../filter.pipe'
+import { FilterPipe } from '../pipes/filter.pipe'
+import { UniqueFirstNamePipe} from '../pipes/unique-first-name.pipe'
 
 
 @Component({
@@ -14,7 +15,6 @@ import { FilterPipe } from '../filter.pipe'
   styleUrls: ['./students.component.css']
 })
 export class StudentsComponent implements OnInit {
-
 
   students = []
   sortedData;

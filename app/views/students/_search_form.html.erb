@@ -1,5 +1,9 @@
-<%= form_tag("/students", method: :get) do %>
-    Search by Movie
-  <%= text_field_tag :movie %>
-  <%= submit_tag "Search" %>
-<% end %>
+ <div class='container'>
+  <div id='searchBarContainer'>
+    <%= form_tag("/students", method: :get) do %>
+        Search by Movie: 
+      <%= text_field_tag :movie %>
+      <%= submit_tag "Search" %>
+    <% end %>
+  </div>
+</div>

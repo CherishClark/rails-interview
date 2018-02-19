@@ -1,1 +1,36 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#table-container {
+  margin: 50px;
+}
+
+.students-header {
+  text-align: center;
+}
+
+.students-data {
+  text-align: center;
+}
+
+.mat-sort-header-container {
+  justify-content: center;
+  padding-left: 15px;
+}
+
+#searchBarContainer {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+input {
+  width: 200px;
+}

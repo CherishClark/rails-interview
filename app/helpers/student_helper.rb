@@ -1,6 +1,5 @@
 module StudentHelper
 
-
   def unique_firstname(student)
     allStudentFirstNames = []
 
@@ -14,5 +13,5 @@ module StudentHelper
       return student.firstname
     end
   end
-
+  
 end

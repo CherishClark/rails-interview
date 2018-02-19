@@ -15,11 +15,8 @@ class StudentsController < ApplicationController
       @students
     end
   end
-
   
   def foo
-
-    p params["valid"], params["valid"] == "true"
     if params["valid"] == "true"
       render :nothing => true
       response.body='BAR'
@@ -27,20 +24,13 @@ class StudentsController < ApplicationController
     else
       raise 'error'
     end
-
-
-
   end
 
   def js
   end
 
-
-
   def show
   end
-
-
 
   private
     def student_params
