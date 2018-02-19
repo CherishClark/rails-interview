@@ -9,16 +9,24 @@ export class UniqueFirstNamePipe implements PipeTransform {
 
     let allStudentsFirstNames = []
 
+    if (sortedData == null) {
+      return sortedData;
+    }
+
+    var updatedFirstNames = []
+
     for (let student of sortedData){
       allStudentsFirstNames.push(student.firstname)
     }
+
     for (let student of sortedData) {
-     
-     if (allStudentsFirstNames.filter(firstname => student.firstname).length > 1)
-       return allStudentsFirstNames.filter(student)
-     // student.firstname + " " + student.lastname.charAt(0) + "."
-     else
-       return student.firstname
+
+      if (allStudentsFirstNames.filter((s) => (s == student.firstname)).length > 1) {
+        student.firstname = student.firstname + " " + student.lastname.charAt(0) + "."
+      }
+      updatedFirstNames.push(student)
     }
+
+    return updatedFirstNames
   }
 }

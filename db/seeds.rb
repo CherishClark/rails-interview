@@ -1,30 +1,36 @@
-10.times do |student|
+5.times do |student|
   Student.create!(
     firstname: "Morty",
-    lastname: "#{student}Smith",
-    favoritefood: "Pickles",
-    favoritecolor: "Green",
+    lastname: "Smith c-#{student*42}",
+    favoritefood: "Concentrated Dark Matter",
+    favoritecolor: "blue",
     favoritemovie: "The Fly")
 end
-
-p "created 10 Mortys"
 
 Student.create!(
     firstname: "Jerry",
     lastname: "Smith",
     favoritefood: "Pickles",
-    favoritecolor: "Green",
+    favoritecolor: "pink",
     favoritemovie: "Anatomy Park")
-
-p "created 1 Jerry"
 
 Student.create!(
     firstname: "Rick",
     lastname: "Smith",
-    favoritefood: "Pickles",
-    favoritecolor: "Green",
+    favoritefood: "Szechuan Chicken McNugget Sauce",
+    favoritecolor: "green",
+    favoritemovie: "Inception")
+
+Student.create!(
+    firstname: "Beth",
+    lastname: "Smith",
+    favoritefood: "Yum Yums",
+    favoritecolor: "red",
     favoritemovie: "Mad Max")
 
-
-p "created 1 Rick"
-
+Student.create!(
+    firstname: "Scary",
+    lastname: "Terry",
+    favoritefood: "Bobbish",
+    favoritecolor: "yellow",
+    favoritemovie: "Nightmare on Elm Street")

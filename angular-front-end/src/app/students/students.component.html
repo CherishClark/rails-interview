@@ -8,14 +8,14 @@
   <div class='container'>
     <table matSort (matSortChange)="sortData($event)" class="table table-hover">
       <tr>
-        <th scope="col" class="students-header" mat-sort-header="firstname">FirstName</th>
-        <th scope="col" class="students-header" mat-sort-header="favoritefood">Food</th>
-        <th scope="col" class="students-header" mat-sort-header="favoritecolor">Color</th>
-        <th scope="col" class="students-header" mat-sort-header="favoritemovie">Movie</th>
+        <th scope="col" class="students-header" mat-sort-header="firstname">First Name</th>
+        <th scope="col" class="students-header" mat-sort-header="favoritefood">Favorite Food</th>
+        <th scope="col" class="students-header" mat-sort-header="favoritecolor">Favorite Color</th>
+        <th scope="col" class="students-header" mat-sort-header="favoritemovie">Favorite Movie</th>
       </tr>
 
-      <tr *ngFor="let student of sortedData | filter:filteredFirstname: 'firstname'" class="students-row">
-        <td class="students-data">{{ student.firstname }}</td>
+      <tr *ngFor="let student of sortedData | uniqueFirstName | filter:filteredFirstname: 'firstname'" class="students-row" >
+        <td class="students-data">{{ student.firstname  }}</td>
         <td class="students-data">{{ student.favoritefood }}</td>
         <td class="students-data">{{ student.favoritecolor }}</td>
         <td class="students-data">{{ student.favoritemovie }}</td>
@@ -25,3 +25,4 @@
   </div>
 
 </div> 
+
